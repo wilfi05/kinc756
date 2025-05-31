@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Perkalian</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Splash Screen -->
+  <section id="splash-screen" class="screen active">
+    <h1 class="game-title">Kuis Perkalian Interaktif</h1>
+    <p class="high-score-text">Skor Tertinggi: <span id="high-score">0</span></p>
+    <button id="start-button" class="btn primary">Mulai</button>
+  </section>
+
+  <!-- Game Screen -->
+  <section id="game-screen" class="screen hidden">
+    <div class="score-info">
+      <p>Skor: <span id="current-score">0</span></p>
+      <p>Waktu: <span id="timer">10</span> detik</p>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+    <div class="question-container">
+      <h2 id="question">7 x 8 = ?</h2>
+      <input type="number" id="answer-input" placeholder="Jawaban" autocomplete="off" />
+      <button id="submit-button" class="btn secondary">Submit</button>
+    </div>
+  </section>
+
+  <!-- Game Over Screen -->
+  <section id="game-over-screen" class="screen hidden">
+    <h2>Game Over</h2>
+    <p>Skor Akhir: <span id="final-score">0</span></p>
+    <button id="play-again-button" class="btn primary">Main Lagi</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
